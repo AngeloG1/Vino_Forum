@@ -1,4 +1,4 @@
-require 'pry'
+# require 'pry'
 require 'sinatra'
 require 'active_record'
 require 'date'
