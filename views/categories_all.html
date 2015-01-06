@@ -1,0 +1,336 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<style>html
+{
+  margin: 0;
+  padding: 0;
+  color: #aaaaaa;
+  background-color: #333333;
+  font: normal 12px "Trebuchet MS", "Lucida Grande", Verdana, Georgia, Sans-Serif;
+}
+
+/* Links */
+
+a:link { text-decoration: none; color: #7799bb; }
+
+a:visited { text-decoration: none; color: #557799; }
+
+a:hover, a:active { color: #dd5555; }
+
+/* Html Elements */
+li { padding:10px; font-size: 15px;
+
+}
+
+h1, h2, h3, h4, h5, h6 { font-weight: normal; margin: 0; padding: 10px 0; color: #779955; }
+
+h1 { font-size: 32px;}
+
+h2 { font-size: 28px; }
+
+h3 { font-size: 24px; }
+
+h4 { font-size: 20px; }
+
+h5, h6 { font-size: 17px; }
+
+ul, ol, dl, blockquote, pre
+{
+  color: #999999;
+  margin: 10px 35px; 
+  padding: 10px 30px; 
+  line-height: 1.6em;
+  border: 1px solid #1a1a1a;
+  border-top: 10px solid #151515;
+  background: #404040 url(images/navigation_hover.gif) top left repeat;
+}
+
+p { margin: 0; }
+
+ul { list-style-type: square; } 
+
+dt
+{
+  margin: 0;
+  color: #7799bb;
+  font-size: 13px; 
+  font-weight: bold;
+  padding: 10px 0 2px; 
+  text-transform: uppercase;
+}
+
+dd { font-size: 10 ;margin: 0; padding: 2px 0 5px; margin-bottom: 5px; border-bottom: 1px dotted #555555; }
+
+dd.last { border-bottom-width: 0; }
+
+pre { font-family: Consolas, Verdana, "Courier New"; font-size: 11px; padding: 10px 30px; }
+
+code { color: #779955; }
+
+abbr, acronym { text-decoration: none; border-bottom: 1px dotted #aaaaaa; cursor: help; }
+
+em { font-style: italic; }
+
+strong { font-weight: bold; }
+
+ins { color: #999999; text-decoration: none; padding-left: 20px; background: transparent url(images/information.png) center left no-repeat; }
+
+del { text-decoration: line-through; } 
+
+blockquote { text-align: right; }
+
+blockquote p { text-align: left; }
+
+blockquote cite { font-style: normal; padding-right: 10px; }
+
+/* Structure */
+
+body
+{
+  margin: 0;
+  float: left;
+  width: 100%; 
+}
+
+#header
+{
+  float: left; 
+  width: 100%; 
+  clear: both;
+  border-top: 10px solid #111111;
+  background: #222222 url(images/navigation_hover.gif) top left repeat;
+}
+
+#navigation
+{
+  float: left;
+  width: 100%; 
+  clear: both;
+  color: #333333;
+  border-bottom: 5px solid #222222;
+  background: #eeeeee url(images/navigation_bg.gif) top left repeat; 
+}
+
+#wrapper
+{
+  clear: both;
+  float: left;
+  width: 100%;
+  margin: 10px 0; 
+  background: transparent url(images/hr_dotted.gif) 60% 0 repeat-y; 
+}
+
+#content-wrapper
+{
+  width: 60%;
+  float: left;
+}
+
+#content
+{
+  float: left;
+  padding: 0 20px;
+}
+
+#sidebar-wrapper
+{
+  width: 40%;
+  float: left;
+}
+
+#sidebar
+{
+  float: left;
+  padding: 0 20px;
+}
+
+#footer
+{
+  clear: both;
+  float: left;
+  width: 100%; 
+  color: #888888;
+  text-align: center; 
+  background-color: #222222;
+  border-top: 1px solid #000000;
+  border-bottom: 10px solid #191919;
+}
+
+/* Header */
+
+#header h1 { padding: 20px; }
+
+/* Navigation */
+
+#navigation ul { float: left; list-style-type: none; margin: 0; padding: 0; background: none; border-width: 0; }
+
+#navigation li { float: left; }
+
+#navigation a
+{
+  float: left;
+  display: block;
+  padding: 5px 10px; 
+}
+
+#navigation a:link,
+#navigation a:visited
+{
+  color: #002244; 
+  font-weight: bold; 
+  text-transform: uppercase; 
+}
+
+#navigation a:hover,
+#navigation a:active
+{
+  color: #7799bb;
+  background: #333333 url(images/navigation_hover.gif) top left repeat;
+}
+
+li#lhome a:hover,
+li#lhome a:active
+{
+  background-position: 0 -3px; 
+}
+
+li#lproducts a:hover,
+li#lproducts a:active
+{
+  background-position: 0 1px; 
+}
+
+li#lsolutions a:hover,
+li#lsolutions a:active
+{
+  background-position: 0 2px; 
+}
+
+li#lmysterious a:hover,
+li#lmysterious a:active
+{
+  background-position: 0 -1px; 
+}
+
+li#labout a:hover,
+li#labout a:active
+{
+  background-position: 0 -2px; 
+}
+
+li#lcontact a:hover,
+li#lcontact a:active
+{
+  background-position: 0 -3px; 
+}
+
+body#babout li#labout a
+{
+  color: #99bbdd;
+  background: #333333 url(images/navigation_hover.gif) 0 -2px repeat;
+}
+
+/* Sidebar */
+
+#sidebar p
+{
+  color: #999999;
+  margin: 10px 35px; 
+  padding: 5px 30px; 
+  line-height: 1.6em;
+  border: 1px solid #1a1a1a;
+  border-top: 10px solid #151515;
+  background: #404040 url(images/navigation_hover.gif) top left repeat;
+}
+
+/* Footer */
+
+#footer p { margin: 15px 0; }
+
+#footer a:link { color: #888888; font-weight: bold; border-bottom: 1px dotted #888888; } 
+
+#footer a:visited { color: #666666; font-weight: bold; border-bottom: 1px dotted #666666; }
+
+#footer a:hover, #footer a:active { color: #999999; border-bottom: 1px solid #999999; } 
+
+</style>
+
+
+<head>
+<title>WineForum | Home</title>
+
+<!--[if lt ie 7]><link rel="stylesheet" type="text/css" media="screen" href="ie-win.css" /><![endif]-->
+</head>
+<body id="babout">
+<div id="header">
+  <h1>Wine Forum</h1>
+</div>
+<div id="navigation">
+  <ul>
+    <li id="lhome"><a href="http://127.0.0.1:4567/">Home</a></li>
+     <li id="lsolutions"><a href="http://127.0.0.1:4567/categories"> Topic List</a></li>
+    <li id="lsolutions"><a href="http://127.0.0.1:4567/add_new_topic"> Create New Topic</a></li>
+  </ul>
+</div>
+<div id="wrapper">
+  <div id="content-wrapper">
+    <div id="content">
+      <h4>Previous 5 Topics</h4>
+      <dl>
+        
+<h5> Click On Topic To View Post</h6>
+<h1>  {{#name}}<li> <a href="http://127.0.0.1:4567/{{.}}">{{.}}</a> </li>{{/name}} </h1>
+
+
+
+
+
+</br><a href="http://127.0.0.1:4567/new/post">Post a comment</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://127.0.0.1:4567/add_new_topic">Create a New Topic</a>
+
+
+
+
+      </dl>
+
+      <h6>Other Stuff</h6>
+      <blockquote>
+        <p>his is still a work in progress <cite>&mdash; <abbr title="Invisible Pink Unicorn"></abbr></cite></p>
+      </blockquote>
+      <pre><code>This is unlike any code I've ever seen in my entire life. Well, minus my dreams, maybe.</code></pre>
+    </div>
+  </div>
+  <div id="sidebar-wrapper">
+    <div id="sidebar">
+      <h3>New York City</h3>
+      <ul>
+        <img src="http://www.wineandbeerwalk.com/images/images/background/wine1-bg1.jpg" alt="The official HTML5 Icon" height="180" width = "340" align="middle"   >
+      </ul>
+      <h3>NYC's Top 6 Wine Bars: </h3>
+      <ol>
+        <li>Vino Vino </br>212-925-8510 </br> 211 West Broadway
+New York, NY
+</li>
+        <li>The Bourgeois Pig </br> 212-475-2246 </br>111 E 7th Street
+New York, NY</li>
+        <li>City Winery</br>212-608-0555</br>115 Varick Street
+New York, NY</li>
+        <li>Lelabar</br> 212-206-0594</br> 422 Hudson at Leroy Street</li>
+        <li>Clo Wine Bar</br> 212-823-9899</br> 10 Columbus Cirlcle, 4th Floor New York, NY</li>
+        <li>The Ten Bells</br> 212-228-4450</br> 247 Broome Street New York, NY</li>
+      </ol>
+       <h3>Contact info</h3>
+      <p> Email: wine_forum@awesome.com </br>
+          Phone: 1-800-awesomesauce </p>
+    </div>
+  </div>
+</div>
+<div id="footer">
+  <p>Copyright &copy; 2015 &ndash; All rights reserved. </p>
+  <p> Angelo Galasso </a>
+     </p>
+  <p> <a href="#">Terms of Service</a> | <a href="#">Privacy</a> | <a href="#">Contact</a> | <a href="#">About</a> | <a href="#">Links </a> | <a href="#"title="Valid CS">Info</a> </p>
+</div>
+</body>
+</html>
