@@ -37,7 +37,7 @@ post '/' do
 end
 
 get '/add_new_topic' do
-	File.read('./views/new_topic_test.html')
+	File.read('./views/new_topics.html')
 end
 
 
